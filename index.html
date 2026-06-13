@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THE DEEP WEB MUSEUM</title>
+</head>
+<body>
+    <!-- Landing Page -->
+    <div id="landing" class="landing">
+        <div class="crt-overlay"></div>
+        <div class="scanlines"></div>
+        <div class="vhs-noise"></div>
+
+        <div class="landing-content">
+            <h1 class="title glitch" data-text="THE DEEP WEB MUSEUM">THE DEEP WEB MUSEUM</h1>
+            <p class="subtitle typing">Recovered Digital Artifacts From Forgotten Networks</p>
+            <p class="warning flicker">"Some files were never meant to be recovered."</p>
+            <button id="enter-btn" class="enter-button pulse">
+                <span class="btn-text">ENTER THE MUSEUM</span>
+                <span class="btn-glitch"></span>
+            </button>
+        </div>
+
+        <div class="glitch-blocks"></div>
+    </div>
+
+    <!-- Museum Archive Interface -->
+    <div id="museum" class="museum hidden">
+        <div class="crt-overlay"></div>
+        <div class="scanlines"></div>
+        <div class="vhs-noise"></div>
+
+        <!-- Header -->
+        <header class="museum-header">
+            <div class="header-title">
+                <span class="header-icon">&#9632;</span>
+                <span>ARCHIVE_SYSTEM v2.7.1</span>
+            </div>
+            <div class="header-status">
+                <span class="status-indicator blink">RECOVERED</span>
+                <span class="timestamp" id="timestamp"></span>
+            </div>
+        </header>
+
+        <!-- Main Container -->
+        <div class="museum-container">
+            <!-- Sidebar -->
+            <aside class="sidebar">
+                <div class="sidebar-header">
+                    <span class="folder-icon">&#128193;</span>
+                    <span>ARCHIVE_FOLDERS</span>
+                </div>
+                <nav class="folder-nav">
+                    <div class="folder active" data-folder="artifacts">
+                        <span class="folder-icon">&#128447;</span>
+                        <span>Artifacts</span>
+                        <span class="file-count">(5)</span>
+                    </div>
+                    <div class="folder" data-folder="logs">
+                        <span class="folder-icon">&#128447;</span>
+                        <span>Logs</span>
+                        <span class="file-count">(4)</span>
+                    </div>
+                    <div class="folder" data-folder="unknown">
+                        <span class="folder-icon">&#128447;</span>
+                        <span>Unknown</span>
+                        <span class="file-count">(3)</span>
+                    </div>
+                    <div class="folder" data-folder="archived">
+                        <span class="folder-icon">&#128447;</span>
+                        <span>Archived</span>
+                        <span class="file-count">(4)</span>
+                    </div>
+                </nav>
+                <div class="sidebar-footer">
+                    <div class="hidden-clue" id="hidden-clue-1">DO NOT TRUST THE ARCHIVE</div>
+                </div>
+            </aside>
+
+            <!-- Main File Area -->
+            <main class="file-area">
+                <div class="file-area-header">
+                    <span class="breadcrumb">/Artifacts/</span>
+                    <span class="view-mode">LIST VIEW</span>
+                </div>
+                <div class="file-grid" id="file-grid">
+                    <!-- Files will be rendered here -->
+                </div>
+            </main>
+        </div>
+
+        <!-- Random Glitch Messages -->
+        <div class="glitch-message hidden" id="glitch-message"></div>
+    </div>
+
+    <!-- File Window Container -->
+    <div id="window-container"></div>
+
+    <!-- Secret Final Transmission -->
+    <div id="secret-unlocked" class="secret-overlay hidden">
+        <div class="secret-content">
+            <h2>FINAL_TRANSMISSION.hidden</h2>
+            <div class="secret-text"></div>
+            <button class="close-secret">CLOSE</button>
+        </div>
+    </div>
+
+    <script type="module" src="main.js"></script>
+</body>
+</html>
